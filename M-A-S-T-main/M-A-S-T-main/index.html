@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Fotos do Universo</title>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="galaxia.jpg" alt= "foto da galaxia">
+        <h1 class="cabecalho-titulo">Fotos de telescopios espaciais</h1>
+
+        <span id="burguer" class="material-symbols-outlined"
+onclick="clickMenu()">menu</span>
+
+        <nav id="menu" class="cabecalho-menu">
+
+            <ul>
+                <ul>
+                    <li><a class="cabecalho-menu-item" href="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/main_image_deep_field_smacs0723-5mb.jpg?w=1600&h=900">James Weeb</a></li>
+                    <li><a class="cabecalho-menu-item" href="data:image/jpeg;base64,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">hubble</a></li>
+                    <li><a class="cabecalho-menu-item" href="#">Sonda Voyager II</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <script>
+
+                function clickMenu() {
+                if (menu.style.display == 'block') {
+                menu.style.display = 'none';
+                } else {
+                menu.style.display = 'block';
+                }
+                }
+                </script>
+</body>
+</html>
